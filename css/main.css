@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#dfdad333 ;
+}
+/*estilos de header*/
+
+header{
+    background-image: linear-gradient(to bottom,#252525, #aeabab);
+    background-color: rgb(117, 112, 112);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: beige;
+    top: 0.5px;
+    position: sticky;
+    font-size: 1rem;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+/*estilos del menu*/
+
+.mainH2 h2{
+    margin: 25px;  
+    padding: 30px;
+    font-size: 1.8rem; 
+    color:  #333;
+}
+header .menu ul{
+    flex-direction: row;
+    margin-left: 330px;
+}
+.menu ul li{
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-size: xlarge;
+}
+h2{
+    color: #2d2b2b;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menu ul li .subMenu{
+    display: none;
+    color: gainsboro
+  
+}
+header nav ul li{   
+    list-style: none;  
+    margin: 15px;  
+}
+main div img{
+    width: 100%;
+}
+main{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+}
+.mainP{
+    margin: 20px;
+}
+.descripcionVistafrente{
+    margin: 30px;
+}
+h2{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+/*grid  seccion unidades*/
+.unidades{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:"descripcionU descripcionU"
+                        "unidad1 unidad2"
+                        "unidad3 unidad4"
+                        "masInfo masInfo" ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin: 25px;
+}
+.descripcionU{
+    grid-area: descripcionU;
+}
+.unidad1{
+    grid-area: unidad1;
+}
+.unidad2{
+    grid-area: unidad2;
+}
+.unidad3{
+    grid-area: unidad3;
+}
+.unidad4{
+    grid-area: unidad4;
+}
+.masInfo{
+    grid-area: masInfo;
+    text-align: center;
+    font-size: 1.2rem;
+}
+   
+footer{
+    background: #252525;
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top,#252525,gainsboro);
+} 
+body .footerContacto{
+    position: absolute;
+}
+
+/*grid index*/
+
+/* media queris pantalla chica*/
+@media screen and (max-width:600px) {
+  .descripcionU{
+    display: none;
+  }
+  .unidades{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas:"descripcionU "
+                        "unidad1"
+                        "unidad2"
+                        "unidad3"
+                        "unidad4"
+                        "masInfo" ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin: 25px;
+}
+.descripcionU{
+    grid-area: descripcionU;
+}
+.unidad1{
+    grid-area: unidad1;
+}
+.unidad2{
+    grid-area: unidad2;
+}
+.unidad3{
+    grid-area: unidad3;
+}
+.unidad4{
+    grid-area: unidad4;
+}
+.masInfo{
+    grid-area: masInfo;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+}
+
